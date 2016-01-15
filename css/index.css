@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* All section headers */
+h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    color: #fff;
+}
+
+/* General Section Styling */
+
+.sections {
+    float: left;
+    width: 100%;
+}
+
+.sections .main {
+    width: 100%;
+}
+
+/* Intro */
+
+.intro {
+    background: url('../images/nashville-skyline.png') no-repeat center bottom #00CED1;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: -2px;
+}
+
+.intro img {
+    /* find a better way to do this */
+    margin-bottom: 470px;
+    width: 80%;
+    padding-top: 25px;
+}
+
+.intro p {
+    letter-spacing: 1px;
+    font-size: 20px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.intro-content {
+    align-self: center;
+}
+
+.intro-text {
+    display: table-cell;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    background-color: #181312;
+    width: 150px;
+    height: 100px;
+}
+
+
+/* About Me */
+#about {
+    background-color: #F27470;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.about-content {
+    align-self: center;
+    color: #000;
+}
+
+.icon {
+    color: #000;
+    display: inline-block;
+}
+
+.icon:hover {
+    /*color: #fff;*/
+}
+
+#linked-in a, #email a {
+    text-decoration: none;
+}
+
+#linked-in:hover i, #linked-in:hover p {
+    color: #fff;
+}
+
+#email:hover i, #email:hover p {
+    color: #fff;
+}
+
+#email, #linked-in {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#email > p, #linked-in > p {
+    margin-left: 10px;
+}
+
+.email {
+    font-size: 18px;
+}
+
+.side-buffer {
+    margin-right: 20px;
+}
+
+#about #circle {
+    width: 250px;
+    height: 250px;
+    /*background: red;*/
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    border-radius: 200px;
+    background: url('../images/grace_kampa.png') no-repeat center bottom;
+}
+
+.circle-padding {
+    width: 45%;
+    /* use media tag later to center on mobile*/
+    padding-left: 12%;
+
+}
+
+/* Skills */
+#skills {
+    background-color: #50C880;
+}
+
+#skills .skills-section {
+    background-color: #F27470;
+    border-bottom: solid 5px #713535;
+    height: 70px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+#skills .title {
+    text-transform: uppercase;
+}
+
+#skills p {
+    padding: 12px;
+    font-weight: bold;
+    color: #273D4E;
+    font-size: 18px;
+    margin-bottom: -4px;
+}
+
+.arrow {
+    position: relative;
+}
+
+.arrow > p, .arrow > img{
+    display: inline-block;
+}
+
+.arrow img {
+    width: 50px;
+    right: 0;
+    padding: 12px;
+    margin-top: 7px;
+    margin-right: 5px;
+    position: absolute;
+}
+
+.proficient {
+    color: #D4E8BB;
+    font-weight: 400;
+}
+
+.languages-content, .software-content {
+    display: none;
+}
+
+
+/* Projects */
+#projects {
+    background-color: #273D4E;
+}
+
+.projects .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.circle-wrap {
+    width: 220px;
+    height: 220px;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.project-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* this is the outer circle made with a box shadow */
+    box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6);
+    transition: all 0.4s ease-in-out;
+}
+
+.personal-website {
+    background: url('../images/nashsky.png') 224px 224px;
+}
+
+.medtracker {
+    background: url('../images/medtracker.png');
+}
+
+.hidden-circle {
+    height: inherit;
+    width: inherit;
+    background: rgba(0, 206, 209, 0.6);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}
+
+.project-circle:hover .hidden-circle {
+    transform: scale(1);
+}
+
+.project-circle:hover {
+    box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 1px 2px rgba(0,0,0,0.1);
+}
+
+h4 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 80px 0 0 0;
+    height: 80px;
+    font-family: 'Raleway', Arial, sans-serif;
+    text-shadow:
+    0 0 1px #fff,
+    0 1px 2px rgba(0,0,0,0.3);
+}
+
+.projects p {
+    color: white;
+    background: none;
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+
+/* Interests */
+#interests {
+    /*background-color: #273D4E;*/
+    background-color: #00CED1;
+}
+
+#interests img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+}
+
+.center-img {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+#interests p {
+    color: #273D4E;
+    /*color: #F9BF3B;*/
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+/* EXTRAS */
+
+.top-buffer {
+    margin-top: 50px;
+}
+
+.bottom-buffer {
+    margin-bottom: 50px;
+}
+
+.half-top-buffer {
+    margin-top: 15px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-device-width: 480px) {
+    h3 {
+        font-size: 80px;
+    }
+
+    #email, #linked-in {
+        font-size: 35px;
+    }
+
+    .circle-padding {
+        width: 45%;
+        padding-left: 27%;
+
+    }
+
+    /*#skills .skills-section {*/
+        /*height: 100px;*/
+        /*width: 100%;*/
+    /*}*/
+
+    /*#skills .title {*/
+        /*font-size: 35px;*/
+        /*padding-top: 15px;*/
+        /*padding-left: 20px;*/
+    /*}*/
+
+    /*#skills p {*/
+        /*padding: 20px;*/
+        /*font-weight: bold;*/
+        /*color: #273D4E;*/
+        /*font-size: 27px;*/
+        /*margin-bottom: -4px;*/
+    /*}*/
+
+    /*.arrow img {*/
+        /*width: 78px;*/
+        /*right: 0;*/
+        /*padding: 12px;*/
+        /*margin-top: 19px;*/
+        /*margin-right: 5px;*/
+        /*position: absolute;*/
+    /*}*/
+
+}
